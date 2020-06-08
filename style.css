@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   
+
+section{
+    height: 100vh;
+    background-color:#67696E;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header h1{
+    color: rgb(224, 8, 8);
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 60px;
+}
+.score{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2{
+    font-size: 30px;
+}
+
+.score p{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.intro{
+    color: white;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.intro h1{
+    font-size: 50px;
+    }
+
+.intro button, 
+.match button{
+        width: 150px;
+        height: 50px;
+        background:none;
+        color: grey;
+        font-size: 20px;
+        font-weight: bold;
+        background: yellow;
+        border-radius: 3px;
+        margin: 10px;
+    
+    }
+
+    .intro button, .match button:hover{
+        cursor: pointer;
+    background: rgba(6, 7, 7, 0.658);
+
+    }
+
+
+    .match{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        transition: opacity 0.5s ease 0.5s;
+    }
+.winner{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.hands,.options{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+header{
+    background:rgba(177, 179, 180, 0.897);
+    padding: 30px;
+    margin-bottom: 10px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.computer-hand{
+transform: rotateY(180deg);
+}
+
+div.fadeOut{
+    opacity:0;
+    pointer-events: none;
+
+}
+
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
+
+
