@@ -51,32 +51,32 @@ const game = () => {
             winner.textContent = "ITS A DRAW!"
                 return;
             }else if (playerChoice === 'paper' && computerChoice === 'rock'){
-            winner.textContent = "YOU WIN , PAPER COVERS ROCK!"
+            winner.textContent = "YOU WON🎉, PAPER COVERS ROCK !"
                 pScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'rock' && computerChoice === 'scissors'){
-            winner.textContent = "YOU WIN , ROCK CRUSHES SCISSORS!"
+            winner.textContent = "YOU WON🎉, ROCK CRUSHES SCISSORS !"
                 pScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'scissors' && computerChoice === 'rock'){
-            winner.textContent = "YOU LOSE , ROCK CRUSHES SCISSORS!"
+            winner.textContent = "YOU LOST👎 , ROCK CRUSHES SCISSORS !"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'rock' && computerChoice === 'paper'){
-            winner.textContent = "YOU LOSE , PAPER COVERS ROCK!"
+            winner.textContent = "YOU LOST👎 , PAPER COVERS ROCK !"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'paper' && computerChoice === 'scissors'){
-            winner.textContent = "YOU LOSE , SCISSORS SLICE THROUGH PAPER!"
+            winner.textContent = "YOU LOST👎 , SCISSORS SLICE THROUGH PAPER !"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'scissors' && computerChoice === 'paper'){
-            winner.textContent = "YOU WIN , SCISSORS SLICE THROUGH PAPER!"
+            winner.textContent = "YOU WON🎉 , SCISSORS SLICE THROUGH PAPER !"
                 pScore++;
                 updateScore();
                 return;
