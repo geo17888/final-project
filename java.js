@@ -46,22 +46,22 @@ const game = () => {
         const winner = document.querySelector(".winner");
 
         if (playerChoice === computerChoice){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            winner.textContent = "ITS A DRAW!"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'paper' && computerChoice === 'rock'){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            winner.textContent = "PAPER COVERS ROCK , YOU WIN"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'rock' && computerChoice === 'scissors'){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            winner.textContent = "ROCK CRUSHES SCISSORS YOU WIN!"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'scissors' && computerChoice === 'rock'){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            winner.textContent = "ROCK CRUSHES SCISSORS YOU LOSE!"
                 cScore++;
                 updateScore();
                 return;
@@ -71,12 +71,12 @@ const game = () => {
                 updateScore();
                 return;
             }else if (playerChoice === 'paper' && computerChoice === 'scissors'){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            winner.textContent = "PAPER COVERS ROCK , YOU WIN"
                 cScore++;
                 updateScore();
                 return;
-            }else if (playerChoice === 'scissors' || computerChoice === 'paper'){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            }else if (playerChoice === 'scissors' && computerChoice === 'paper'){
+            winner.textContent = "SCISSORS SLICE THROUGH PAPER,YOU LOSE!"
                 cScore++;
                 updateScore();
                 return;
