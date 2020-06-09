@@ -45,20 +45,60 @@ const game = () => {
     const compareHands = (playerChoice, computerChoice) => {
         const winner = document.querySelector(".winner");
 
+        if (playerChoice === computerChoice){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }else if (playerChoice === 'paper' && computerChoice === 'rock'){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }else if (playerChoice === 'rock' && computerChoice === 'scissors'){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }else if (playerChoice === 'scissors' && computerChoice === 'rock'){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }else if (playerChoice === 'rock' && computerChoice === 'paper'){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }else if (playerChoice === 'paper' && computerChoice === 'scissors'){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }else if (playerChoice === 'scissors' || computerChoice === 'paper'){
+            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+                cScore++;
+                updateScore();
+                return;
+            }
+        }
+    
 
+/*
         if (playerChoice === computerChoice) {
-            winner.textContent = "Tie!"
+            winner.textContent = "ITS A DRAW!"
             return;
 
         }
         if (playerChoice === "rock") {
             if (computerChoice === "scissors") {
-                winner.textContent = "Player Wins!"
+                winner.textContent = "ROCK CRUSHES SCISSORS YOU WIN!"
                 pScore++;
                 updateScore();
+                document.getElementById(playerChoice).classList.add("green-glow");
                 return;
             } else {
-                winner.textContent = "Computer Wins"
+                winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
                 cScore++;
                 updateScore();
                 return;
@@ -68,12 +108,12 @@ const game = () => {
         }
         if (playerChoice === "paper") {
             if (computerChoice === "scissors") {
-                winner.textContent = "Computer Wins!";
+                winner.textContent = "SCISSORS SLICE THROUGH PAPER,YOU LOSE!";
                 cScore++;
                 updateScore();
                 return;
             } else {
-                winner.textContent = "Player Wins"
+                winner.textContent = "PAPER COVERS ROCK , YOU WIN"
                 pScore++;
                 updateScore();
                 return;
@@ -83,12 +123,12 @@ const game = () => {
         }
         if (playerChoice === "scissors") {
             if (computerChoice === "rock") {
-                winner.textContent = "Computer Wins!"
+                winner.textContent = "ROCK CRUSHES SCISSORS,YOU LOSE!"
                 cScore++;
                 updateScore();
                 return;
             } else {
-                winner.textContent = "Player Wins"
+                winner.textContent = "SCISSORS SLICE THROUGH PAPER,YOU WIN!"
                 pScore++;
                 updateScore();
                 return;
@@ -96,7 +136,7 @@ const game = () => {
             }
         }
     }
-
+*/
 
 startGame();
 playMatch();

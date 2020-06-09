@@ -6,16 +6,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
   <title>ROCK PAPER SCISSORS</title>
   
 </head>
 
 <body>
   <header>
-    <h1>ROCK PAPER SCISSORS GAME</h1>
+    <h1>🔥ROCK PAPER AND SCISSORS CHAMPIONSHIP🔥</h1>
+   
+    
   </header>
+
   <section class="game">
+    <div class="trophy">
+    <img src="images/TROPHY.png" alt="">
+  </div>
+  
+  
   <div class="score">
     <div class="player-score">
       <h2>Player</h2>
@@ -27,13 +37,15 @@
     </div>
    </div>
     
-    
+   
 
 <div class="intro">
   
   <h1>ROCK PAPER SCISSORS</h1>
   <audio id="sound1" src="/sound/rock.mp3" preload="auto"></audio>
-  <audio id="sound2" src="/sound/1.wav" preload="auto"></audio>
+  <audio id="sound2" src="/sound/SLAP.mp3" preload="auto"></audio>
+  <audio id="sound3" src="/sound/punch.mp3" preload="auto"></audio>
+  <audio id="sound4" src="/sound/shing.mp3" preload="auto"></audio>
   <button onclick="document.getElementById('sound1').play();">Start!</button>
 </div>
   
@@ -45,9 +57,10 @@
       <img class="computer-hand" src="images/rock.png" alt="">
      </div>
     <div class="options">
-    <button onclick="document.getElementById('sound2').play();" class="rock">rock</button> 
+    <button onclick="document.getElementById('sound3').play();" class="rock">rock</button>
+    
     <button onclick="document.getElementById('sound2').play();" class="paper">paper</button>
-    <button onclick="document.getElementById('sound2').play();" class="scissors">scissors</button>
+    <button onclick="document.getElementById('sound4').play();" class="scissors">scissors</button>
     
     
   </div>

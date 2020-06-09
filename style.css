@@ -4,19 +4,28 @@
     box-sizing: border-box;
    }
 
-   
-
+ 
+    
+    
+ 
 section{
     height: 100vh;
-    background-color:#67696E;
-    font-family: 'Times New Roman', Times, serif;
+    background-color:#D9514EFF;
+    font-family: 'Righteous', cursive;
 }
 
 header h1{
-    color: rgb(224, 8, 8);
+    color: #2A2B2DFF;
     text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 60px;
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}
+
+.trophy{
+   
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
 }
 .score{
     height: 20vh;
@@ -90,13 +99,11 @@ header h1{
     }
     
 header{
-    background:rgba(177, 179, 180, 0.897);
+    background:#2DA8D8FF;
     padding: 30px;
     margin-bottom: 10px;
    
 }
-
-
 
 
 
@@ -127,3 +134,17 @@ div.fadeIn{
 }
 
 
+.red-glow{
+    border: 4px solid red;
+    box-shadow: 0 0 10px rgb(189, 61, 61);
+}
+
+.gray-glow{
+    border: 4px solid gray;
+    box-shadow: 0 0 10px rgb(71, 70, 70);
+}
+
+.green-glow{
+    border: 4px solid rgb(0, 228, 0);
+    box-shadow: 0 0 10px rgb(6, 82, 3);
+}
