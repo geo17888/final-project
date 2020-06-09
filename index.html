@@ -14,13 +14,14 @@
 </head>
 
 <body>
+  <section class="game">
   <header>
     <h1>🔥ROCK PAPER AND SCISSORS CHAMPIONSHIP🔥</h1>
    
     
   </header>
 
-  <section class="game">
+  
     <div class="trophy">
     <img src="images/TROPHY.png" alt="">
   </div>
@@ -28,25 +29,26 @@
   
   <div class="score">
     <div class="player-score">
-      <h2>Player</h2>
+      <h2>Player 1</h2>
       <p>0</p>
     </div>
       <div class="computer-score">
-      <h2>Computer</h2>
+      <h2>Player 2</h2>
       <p>0</p>
     </div>
    </div>
     
+ 
    
 
 <div class="intro">
   
   <h1>ROCK PAPER SCISSORS</h1>
-  <audio id="sound1" src="sound/rock.mp3" preload="auto"></audio>
+  <audio id="sound1" src="sound/rock.mp3" preload="auto" ></audio>
   <audio id="sound2" src="sound/SLAP.mp3" preload="auto"></audio>
   <audio id="sound3" src="sound/punch.mp3" preload="auto"></audio>
   <audio id="sound4" src="sound/shing.mp3" preload="auto"></audio>
-  <button onclick="document.getElementById('sound1').play();">Start!</button>
+  <button id="intro"onclick="document.getElementById('sound1').play();">Start!</button>
 </div>
   
 
@@ -65,10 +67,16 @@
     
   </div>
   </div>
+
+  <div class="name">
+    <h3>MAY THE BEST COMPETITOR WIN</h3>
+  </div>
 </section>
+
 <script src="java.js">
-  
+ 
 </script>
+
 
 
 
