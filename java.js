@@ -47,37 +47,35 @@ const game = () => {
 
         if (playerChoice === computerChoice){
             winner.textContent = "ITS A DRAW!"
-                cScore++;
-                updateScore();
                 return;
             }else if (playerChoice === 'paper' && computerChoice === 'rock'){
-            winner.textContent = "PAPER COVERS ROCK , YOU WIN"
-                cScore++;
+            winner.textContent = "YOU WIN , PAPER COVERS ROCK!"
+                pScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'rock' && computerChoice === 'scissors'){
-            winner.textContent = "ROCK CRUSHES SCISSORS YOU WIN!"
-                cScore++;
+            winner.textContent = "YOU WIN , ROCK CRUSHES SCISSORS!"
+                pScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'scissors' && computerChoice === 'rock'){
-            winner.textContent = "ROCK CRUSHES SCISSORS YOU LOSE!"
+            winner.textContent = "YOU LOSE , ROCK CRUSHES SCISSORS!"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'rock' && computerChoice === 'paper'){
-            winner.textContent = "ROCK COVERS PAPER YOU LOSE!"
+            winner.textContent = "YOU LOSE , PAPER COVERS ROCK!"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'paper' && computerChoice === 'scissors'){
-            winner.textContent = "PAPER COVERS ROCK , YOU WIN"
+            winner.textContent = "YOU LOSE , SCISSORS SLICE THROUGH PAPER!"
                 cScore++;
                 updateScore();
                 return;
             }else if (playerChoice === 'scissors' && computerChoice === 'paper'){
-            winner.textContent = "SCISSORS SLICE THROUGH PAPER,YOU LOSE!"
-                cScore++;
+            winner.textContent = "YOU WIN , SCISSORS SLICE THROUGH PAPER!"
+                pScore++;
                 updateScore();
                 return;
             }
